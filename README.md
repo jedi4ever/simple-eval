@@ -42,5 +42,8 @@ Whenever Claude is done for a step , just exit (CTRL-D twice) and it will contin
     - connect your Github account
     - know your workspace: `tessl workspace list`
 
-- Now simple run `tessl eval run evals/hello-world-typescript jedi4ever/simple-evals`
-- And wait for the results !!!
+Now simply run :
+```
+tessl eval run evals/hello-world-typescript --context-ref HEAD --context-pattern "CLAUDE.md"
+```
+- Select a workspace to run it in and wait for the results !!!
