@@ -33,9 +33,9 @@ The purpose of this project is to explain how to use Tessl's project evals.
 A helper script is provided in [script/run-eval.sh](script/run-eval.sh): 
 - `./run-eval.sh evals/hello-world-typescript/` would run the scenario
 
-Once Claude is done , just exit (CTRL-D twice) and it will continue
+Whenever Claude is done for a step , just exit (CTRL-D twice) and it will continue to the next.
 
-## Running in on Tessl
+## Running it on Tessl platform
 - Now we don't want to keep running these tests on our laptop, let's move them to Tessl.
 - In order to Tessl to reach them:
     - you need to have a Tessl login
