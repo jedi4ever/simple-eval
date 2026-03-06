@@ -15,7 +15,8 @@ eval:
 
 tessl-eval:
 	@echo "Evaluating the solution against the criteria..."
-	@tessl eval run --workspace ${TESSL_WORKSPACE} evals/hello-world-typescript
+	@tessl eval run evals/hello-world-typescript --workspace ${TESSL_WORKSPACE} 
+	
 
 tessl-list:
 	@echo "Listing the evaluations..."
