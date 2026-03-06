@@ -41,5 +41,5 @@ Once Claude is done , just exit (CTRL-D twice) and it will continue
     - connect your Github account
     - know your workspace: `tessl workspace list`
 
-- Now simple run `tessl eval run evals/hello-world-typescript` jedi4ever/simple-evals
+- Now simple run `tessl eval run evals/hello-world-typescript jedi4ever/simple-evals`
 - And wait for the results !!!
