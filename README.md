@@ -4,19 +4,20 @@ The purpose of this project is to explain how to use Tessl's project evals.
 ## Scenario
 - Task: 
     - We ask Claude to generate a hello world with a greeter endpoint. 
-    - see <evals/hello-world-typescript/task.md>
+    - see full [task.md](evals/hello-world-typescript/task.md)
 - Context: 
     - In our `CLAUDE.md` we specified that all endpoints should be like `/awesome/<service>`
     - Code generated should be in the `src` directory
-    - see full <CLAUDE.md>
+    - see full [CLAUDE.md](CLAUDE.md)
 - Criteria:
     - check if files were indeed created in `src`
     - check if is has a `/awesome/greeter` endpoint
     - check if the endpoint responds by using curl
-    - see full <evals/hello-world-typescript/criteria.json>
+    - see full [criteria.json](evals/hello-world-typescript/criteria.json)
 - Base:
     - we specify our repo commit state on which it should execute the task
-    - see <evals/hello-world-typescript/scenario.json>
+    - in our case the first commit of this repo (pretty much an empty repo)
+    - see full [scenario.json](/hello-world-typescript/scenario.json)
 
 ## Testing the scenario locally
 - We want to run the scenario with and without the context (CLAUDE.md)
@@ -29,7 +30,7 @@ The purpose of this project is to explain how to use Tessl's project evals.
 - After each run , a report is written
 - And at the end Claude will compare it
 
-A helper script is provided in `script/run-eval.sh`: 
+A helper script is provided in [script/run-eval.sh](script/run-eval.sh): 
 - `./run-eval.sh evals/hello-world-typescript/` would run the scenario
 
 Once Claude is done , just exit (CTRL-D twice) and it will continue

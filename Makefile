@@ -15,7 +15,7 @@ eval:
 
 tessl-eval:
 	@echo "Evaluating the solution against the criteria..."
-	@tessl eval run evals/hello-world-typescript --workspace ${TESSL_WORKSPACE} 
+	@tessl eval run evals/hello-world-typescript --workspace ${TESSL_WORKSPACE} --context-ref HEAD --context-pattern "CLAUDE.md"
 	
 
 tessl-list:
