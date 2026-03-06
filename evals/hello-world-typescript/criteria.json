@@ -1,0 +1,28 @@
+{
+    "context": "Evaluates whether the webserver is created in src and the greet endpoint is created",
+    "type": "weighted_checklist",
+    "checklist": [
+      {
+        "name": "greet_endpoint_exists",
+        "description": "The server handles GET /awesome/greet as a distinct route and returns a response.",
+        "example": "if (req.url === '/awesome/greet') { res.end('Hello, Patrick!'); }",
+        "category": "INTENT",
+        "max_score": 1
+      },
+      {
+        "name": "server_created_in_src",
+        "description": "The server is created in the src directory",
+        "example": "const express = require('express'); const app = express(); app.get('/awesome/greet', (req, res) => { res.end('Hello, Patrick!'); }); app.listen(3000);",
+        "category": "INTENT",
+        "max_score": 1
+      },
+      {
+        "name": "server_listens",
+        "description": "The server actually starts and listens on a port, verified by running the server and making an HTTP request to the /awesome/greet endpoint.",
+        "example": "curl http://localhost:3000/awesome/greet returns a 200 response",
+        "category": "RUNTIME",
+        "max_score": 1
+      }
+    ]
+  }
+  

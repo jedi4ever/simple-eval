@@ -1,0 +1,1 @@
+create me a hello world nodejs project , make sure to have all the necessary package.json and   packages installed . Make a greet endpoint for it

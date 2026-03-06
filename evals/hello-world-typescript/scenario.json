@@ -1,0 +1,13 @@
+{
+  "type": "coding",
+  "fixture": {
+    "ref": "812113d",
+    "type": "commit",
+    "exclude": [
+      "CLAUDE.md",
+      "tessl.json",
+      ".tessl/"
+    ],
+    "repoUrl": "https://github.com/jedi4ever/simple-eval.git"
+  }
+}
