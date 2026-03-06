@@ -11,7 +11,7 @@ local-judge:
 
 eval:
 	@echo "Evaluating the solution against the criteria..."
-	./script/run-eval.sh @evals/hello-world-typescript
+	./script/run-eval.sh evals/hello-world-typescript
 
 tessl-eval:
 	@echo "Evaluating the solution against the criteria..."
